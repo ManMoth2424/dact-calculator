@@ -2,17 +2,33 @@
 <html>
     <head>
         <title>ダクト計算 v1</title>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
         <h1>ダクト計算 v1</h1>
-        <p>a: <input type="text" id="a-text-input"></p>
-        <input type="button" value="submit" onclick="submit()">
+        <p>
+            a (mm): <input type="number" id="a-text-input"><br>
+            <input type="button" value="submit" onclick="submit()">
+        </p>
+        <img src="ダクトaの元.jpg">
     </body>
     <hr>
     <div class="output">
-        <p>角度(rad): <span id="theta-rad-text-output">ここに結果が出力されます</span>
-        <p>角度(deg): <span id="theta-deg-text-output">ここに結果が出力されます</span>
+        <div class="output-imgs">
+            <div>
+                <img src="結果図.jpg">
+            </div>
+            <div>
+                <img src="ABCの詳細.jpg">
+            </div>
+        </div>
+        <p>角度(rad): <span id="theta-rad-text-output">ここに結果が出力されます</span></p>
+        <p>角度(deg): <span id="theta-deg-text-output">ここに結果が出力されます</span></p>
         <p>長さ(mm): <span id="length-text-output">ここに結果が出力されます</span></p>
+        <p>長方形の幅(mm)<span id="width-text-output">ここに結果が出力されます</span></p>
+        <p>AB(mm): <span id="ab-text-output">ここに結果が出力されます</span></p>
+        <p>BC(mm): <span id="bc-text-output">ここに結果が出力されます</span></p>
     </div>
+    <audio src="レベルアップ.mp3" id="output-se"></audio>
     <script src="main.js"></script>
 </html>

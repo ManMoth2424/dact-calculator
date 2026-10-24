@@ -1,0 +1,14 @@
+img{
+    width: 30%;
+    height: auto;
+}
+.output-imgs{
+    display: flex;
+    width: 60%;
+}
+.output-imgs img{
+    width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
